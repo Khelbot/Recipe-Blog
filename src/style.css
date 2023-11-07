@@ -1,0 +1,36 @@
+.body {
+  font-family: "Nunito", sans-serif;
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  justify-content: center;
+}
+
+.overlay-text {
+  font-family: "Nunito", sans-serif;
+  top: 60px;
+  color: white;
+  position: absolute;
+  text-align: center;
+}
+
+.title {
+  font-size: 72px;
+}
+
+.title-description {
+  font-size: 24px;
+}
+
+#tag {
+  font-weight: 700;
+}
+
+@media (max-width: 476px) {
+  .overlay-text {
+  }
+}
