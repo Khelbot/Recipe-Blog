@@ -7,7 +7,6 @@
 }
 
 .overlay {
-  justify-content: center;
 }
 
 .overlay-text {
@@ -15,7 +14,6 @@
   top: 60px;
   color: white;
   position: absolute;
-  text-align: center;
 }
 
 .title {
@@ -24,10 +22,13 @@
 
 .title-description {
   font-size: 24px;
+  text-align: center;
 }
 
 #tag {
   font-weight: 700;
+  padding: 20px;
+  margin-left: 94px;
 }
 
 @media (max-width: 476px) {
