@@ -97,7 +97,7 @@ h1 {
   margin: 10px;
   margin-top: 5px;
 }
-.favorites {
+.favorites-container {
   display: flex;
   padding-bottom: 40px;
   justify-content: center;
@@ -151,7 +151,6 @@ h1 {
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
   #tag {
-    font-weight: 700;
     padding: 40px;
     padding-left: 40px;
     font-size: 25px;
@@ -232,15 +231,17 @@ h1 {
     margin: 5px;
     margin-top: 5px;
   }
-  .favorites {
+
+  .col-4 {
+    text-align: center;
     display: flex;
-    padding-bottom: 30px;
     flex-direction: column;
     justify-content: center;
   }
   .favorite-recipe-image {
     width: 250px;
   }
+
   .favorite-recipe {
     font-size: 28px;
     text-align: center;
@@ -258,6 +259,7 @@ h1 {
     display: none;
   }
 }
+
 @media screen and (max-width: 700px) {
   .title-description {
     display: none;
