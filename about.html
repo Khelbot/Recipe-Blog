@@ -16,6 +16,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://kit.fontawesome.com/531fd4969d.js"
       crossorigin="anonymous"
@@ -31,7 +32,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-none">
       <div class="container">
-        <a id="tag" class="navbar-brand justify-content-start ml-.5" href="/"
+        <a id="tag" class="navbar-brand justify-content-start ml-.5" href="#"
           >SheCodes</a
         >
         <button
@@ -62,23 +63,30 @@
       </div>
     </nav>
 
-    <h1 class=" mt-4 mb-5 pb-5">About Me</h1>
+    <h1 class="mt-4 mb-5 pb-5">About Me</h1>
 
     <div class="about-section container">
       <div class="row">
-        <div class="col-6 ">
-          <img src="images/portrait.png" alt="Shelley-White" class="portrait" />
+        <div class="col-6 col-sm-12 col-md-12 col-lg-6 d-md-block d-lg-block">
+          <img
+            src="images/portrait.png"
+            alt="Shelley-White"
+            class="portrait d-block"
+          />
         </div>
-        
-        <div class="col-6">
+
+        <div
+          class="col-6 col-xs-12 col-sm-12 col-md-12 col-lg-6 d-md-block d-lg-block"
+        >
           <h2 class="mb-5" id="name">Shelley White</h2>
           <div class="container">
-          <p class="mb-5" id="about-paragraph">
-            Nisl faucibus quis urna nibh ut amet diam suscipit pretium massa
-            sollicitudin in risus in sagittis nisl faucibus quis urna nibh ut
-            amet diam suscipit pretium massa, sollicitudin in risus in.
-            Sagittis.
-          </p></div>
+            <p class="mb-5" id="about-paragraph">
+              Nisl faucibus quis urna nibh ut amet diam suscipit pretium massa
+              sollicitudin in risus in sagittis nisl faucibus quis urna nibh ut
+              amet diam suscipit pretium massa, sollicitudin in risus in.
+              Sagittis.
+            </p>
+          </div>
           <span
             ><strong class="follow-me">Follow Me:</strong>
             <a
@@ -114,9 +122,10 @@
       </div>
     </div>
     <h2 class="favorite-recipe mb-5">Favorite Recipes</h2>
-    <div class="favorites-container ">
+
+    <div class="favorites-container d-flex">
       <div class="row">
-        <div class="col-4 first-favorite ">
+        <div class="d-none col-md-4 col-lg-4 d-inline">
           <img
             src="images/acaibowl.png"
             alt="acai-breakfast-bowl"
@@ -129,7 +138,7 @@
           </p>
         </div>
 
-        <div class="col-4 second-favorite ">
+        <div class="d-none col-md-4 col-lg-4 d-inline">
           <img
             src="images/snackboard.png"
             alt="sweet-savory-snackboard"
@@ -142,7 +151,7 @@
           </p>
         </div>
 
-        <div class="col-4 third-favorite">
+        <div class="d-none col-md-4 col-lg-4 d-inline">
           <img
             src="images/breakfastbake.png"
             alt="baked-porridge-bowl"
@@ -157,47 +166,50 @@
       </div>
     </div>
 
-     <div class="footer-container">
+    <div class="footer-container">
       <div class="row">
         <div class="col-4">
-        <footer>
-          <p  class="tag-2">SheCodes</p></div>
-           <div class="col-4">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              src="images/facebook.svg"
-              alt="facebook-thumbnail"
-              class="footer-thumbnail"
-          /></a>
+          <footer>
+            <p class="tag-2">SheCodes</p> </div>
 
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              src="images/instagram.svg"
-              alt="instagram-thumbnail"
-              class="footer-thumbnail"
-          /></a>
- 
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              src="images/linkedin.svg"
-              alt="facebook-thumbnail"
-              class="footer-thumbnail"
-          /></a>
+            <div class="col-4">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/facebook.svg"
+                  alt="facebook-thumbnail"
+                  class="footer-thumbnail"
+              /></a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/instagram.svg"
+                  alt="instagram-thumbnail"
+                  class="footer-thumbnail"
+              /></a>
+
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/linkedin.svg"
+                  alt="facebook-thumbnail"
+                  class="footer-thumbnail"
+              /></a>
+            </div>
+            <div class="col-4">
+              <p class="footer-copyright">
+                © 2021 SheCodes All rights reserved.
+              </p>
+            </div>
+          </footer>
         </div>
-         <div class="col-4">
-            <p class="footer-copyright">© 2021 SheCodes All rights reserved.</p>
-         </div>
-        </footer>
-      </div>
       </div>
     </div>
   </body>
