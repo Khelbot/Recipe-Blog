@@ -151,6 +151,13 @@ h1 {
 
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
+  .collection-container {
+    text-align: center;
+  }
+
+  .recipe-title-page-1 {
+    text-align: center;
+  }
   #tag {
     padding: 40px;
     padding-left: 40px;
@@ -273,6 +280,10 @@ h1 {
 }
 
 @media screen and (min-width: 576px) and (max-width: 601px) {
+  .portrait {
+    text-align: center;
+  }
+
   #name {
     margin-top: 0%;
     margin-left: -130px;
@@ -309,5 +320,17 @@ h1 {
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .portrait {
     margin-left: -80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .favorite-recipe-image {
+    max-height: 300px;
+  }
+}
+
+@media screen and (min-width: 766px) and (max-width: 1350px) {
+  .recipe-title-page-1 {
+    text-align: center;
   }
 }
