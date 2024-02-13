@@ -1,4 +1,4 @@
-.body {
+body {
   font-family: "Nunito", sans-serif;
 }
 
@@ -49,15 +49,27 @@
   line-height: 3;
   text-align: start;
   margin-left: 20px;
-  font-family: "Nunito", sans-serif;
   font-size: 28px;
   font-weight: bold;
+}
+.recipe-section {
+  max-width: 760px;
+  text-align: center;
 }
 
 h1 {
   text-align: center;
   font-size: 72px;
-  font-family: "Nunito", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700px;
+}
+
+.step-1,
+.step-2 {
+  color: #f65282;
 }
 
 .about-section {
@@ -117,6 +129,10 @@ h1 {
   line-height: 2;
   margin-bottom: 60px;
   margin-right: 65px;
+}
+
+.recipe-section {
+  text-align: center;
 }
 
 .footer-container {
