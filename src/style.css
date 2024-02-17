@@ -52,6 +52,7 @@ body {
   font-size: 28px;
   font-weight: bold;
 }
+
 .recipe-section {
   max-width: 760px;
   text-align: center;
@@ -167,10 +168,6 @@ h3 {
 
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
-  .collection-container {
-    text-align: center;
-  }
-
   .recipe-title-page-1 {
     text-align: center;
   }
@@ -206,6 +203,7 @@ h3 {
   .collection-container {
     margin-top: 60px;
     margin-bottom: 50px;
+    text-align: center;
   }
 
   .col {
@@ -317,6 +315,34 @@ h3 {
   }
 }
 
+@media screen and (min-width: 574px) and (max-width: 750px) {
+  .recipe-title-page-3 {
+    font-size: 24px;
+  }
+  .dotted-line-2 {
+    max-width: 250px;
+  }
+}
+@media screen and (min-width: 574px) and (max-width: 670px) {
+  .food-image-recipe-page {
+    max-width: 300px;
+    margin: 100px;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 670px) and (max-width: 800px) {
+  .food-image-recipe-page {
+    max-width: 450px;
+    margin: 135px;
+    position: relative;
+  }
+  .recipe-title-page-3 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .favorites-container {
     text-align: center;
@@ -325,11 +351,65 @@ h3 {
 }
 
 @media screen and (min-width: 601px) and (max-width: 767px) {
+  .food-image-homepage {
+    width: 300px;
+  }
+
+  .recipe-title-page-1 {
+    text-align: center;
+  }
+
   .favorite-recipe-image {
     max-height: 250px;
   }
   .favorites-description {
     margin-left: 50px;
+  }
+  .title {
+    line-height: 60px;
+    margin-top: 20px;
+  }
+  .about-section {
+    margin-left: 170px;
+  }
+  .portrait {
+    width: 250px;
+    margin-left: 65px;
+  }
+  .follow-me {
+    font-size: 12px;
+    margin-left: 100px;
+  }
+
+  .follow-me-thumbnail {
+    padding: 0px;
+    width: 13px;
+    margin: 5px;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .portrait {
+    width: 250px;
+    margin-left: 0px;
+  }
+  #name {
+    margin-top: 0%;
+    margin-left: -60px;
+    position: relative;
+  }
+
+  #about-paragraph {
+    text-align: center;
+    margin-top: 0%;
+    margin-left: -200px;
+    max-width: 700px;
+    position: flex;
+    display: block;
+  }
+  .follow-me {
+    font-size: 12px;
+    margin-left: 120px;
   }
 }
 
@@ -339,14 +419,19 @@ h3 {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .favorite-recipe-image {
-    max-height: 300px;
-  }
-}
-
 @media screen and (min-width: 766px) and (max-width: 1350px) {
   .recipe-title-page-1 {
     text-align: center;
+  }
+  .follow-me {
+    font-size: 16px;
+    margin-left: 150px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .favorite-recipe-image {
+    max-height: 300px;
   }
 }
