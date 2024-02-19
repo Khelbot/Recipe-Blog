@@ -1,17 +1,63 @@
+:root {
+  --branding-color: #6b62ff;
+}
+
 body {
   font-family: "Nunito", sans-serif;
 }
 
-#tag {
-  font-weight: 700;
-  padding: 20px;
-  font-size: 30px;
-  margin-left: -60px;
+.nav-container {
+  padding-bottom: 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-right: 0px;
+  margin-right: 0px;
+  max-width: 1355px;
+}
+nav .logo,
+.logo-small {
+  max-height: 50px;
 }
 
-.navbar-nav {
-  margin-right: -60px;
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  display: block;
 }
+
+nav li {
+  list-style: none;
+  line-height: 42px;
+  display: inline;
+  margin-left: 17px;
+  padding-bottom: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:visited {
+  text-decoration: none;
+  color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1420px) {
+  .nav-container {
+    margin-left: 0px;
+  }
+  .contact-button {
+    margin-right: 40px;
+  }
+}
+
 .overlay-container {
   position: relative;
   display: inline-block;
@@ -80,6 +126,9 @@ h3 {
 }
 .col-6 .portrait2 {
   position: relative;
+  max-width: 500px;
+  margin-bottom: 100px;
+  margin-right: 0;
 }
 
 #name {
@@ -135,16 +184,9 @@ h3 {
 .recipe-section {
   text-align: center;
 }
-.col-6 .portrait2 {
-  margin-bottom: 100px;
-  margin-right: 0;
-}
 
 .col-6 .contact-information {
   margin-left: 0px;
-}
-.col-6 .portrait2 {
-  max-width: 500px;
 }
 
 .address,
@@ -199,7 +241,11 @@ h3 {
     font-size: 14px; /* Adjust font size for smaller screens */
     line-height: 0.5;
     top: 1px;
+    max-height: 50px;
+    margin-top: -85px;
+    margin-bottom: -50px;
   }
+
   .overlay {
     width: 100%;
   }
@@ -240,26 +286,26 @@ h3 {
     text-align: center;
     margin-left: 120px;
   }
-  .col-6 .portrait2 {
-    width: 300px;
+  .portrait {
+    padding-right: 38px;
     text-align: center;
-    margin-top: -50px;
   }
   #name {
     font-size: 30px;
     text-align: center;
-    margin-left: -185%;
+    margin-left: -175%;
     margin-top: 230px;
   }
+
   #about-paragraph {
-    margin-top: -20px;
-    margin-left: -185%;
-    padding-right: 50px;
+    position: relative;
+    margin-left: -200%;
+    width: 500px;
   }
 
   .follow-me {
     font-size: 12px;
-    margin-left: -390px;
+    margin-left: -190px;
   }
 
   .follow-me-thumbnail {
@@ -295,7 +341,12 @@ h3 {
     margin-left: 55px;
     padding-bottom: 20px;
   }
-
+  .col-6 .portrait2 {
+    width: 300px;
+    text-align: center;
+    margin-top: -50px;
+    text-align: center;
+  }
   .footer-container {
     display: none;
   }
@@ -310,25 +361,23 @@ h3 {
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 601px) {
-  .col-6 .portrait2 {
+@media screen and (min-width: 500px) and (max-width: 601px) {
+  .portrait {
     text-align: center;
-  }
-
-  #name {
-    margin-top: 0%;
-    margin-left: -130px;
-  }
-
-  #about-paragraph {
-    text-align: center;
-    margin-top: 0%;
-    margin-left: -70px;
+    margin-left: 30px;
   }
 
   .follow-me {
     text-align: center;
     margin-left: -120px;
+  }
+  #name {
+    text-align: center;
+    margin-left: -130px;
+    margin-top: 0px;
+  }
+  #about-paragraph {
+    margin-left: -115px;
   }
 }
 
@@ -341,6 +390,17 @@ h3 {
   }
 }
 @media screen and (min-width: 574px) and (max-width: 670px) {
+  .portrait {
+    max-width: 300px;
+    text-align: center;
+    padding-right: 50px;
+    display: block;
+  }
+
+  #name {
+    font-size: 40px;
+  }
+
   .food-image-recipe-page {
     max-width: 300px;
     margin: 100px;
@@ -389,14 +449,16 @@ h3 {
   .about-section {
     margin-left: 170px;
   }
+
   .col-6 .portrait2 {
     width: 250px;
     margin-left: 65px;
   }
 
   .follow-me {
+    text-align: center;
     font-size: 12px;
-    margin-left: 100px;
+    margin-left: 50px;
   }
 
   .follow-me-thumbnail {
@@ -406,10 +468,37 @@ h3 {
     margin-top: 5px;
   }
 }
+
+@media screen and (min-width: 602px) and (max-width: 670px) {
+  .portrait {
+    margin-left: 10px;
+  }
+  #name {
+    margin-left: 5px;
+  }
+  #about-paragraph {
+    margin-left: -120px;
+  }
+}
+
+@media screen and (min-width: 671px) and (max-width: 767px) {
+  .portrait {
+    margin-left: -70px;
+  }
+  #name {
+    margin-left: -50px;
+  }
+  #about-paragraph {
+    margin-left: -50px;
+  }
+  .follow-me {
+    margin-left: 90px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 900px) {
-  .col-6 .portrait2 {
-    width: 250px;
-    margin-left: 0px;
+  .portrait {
+    margin-left: -80px;
   }
   #name {
     margin-top: 0%;
@@ -418,20 +507,64 @@ h3 {
   }
 
   #about-paragraph {
-    text-align: center;
-    margin-top: 0%;
-    margin-left: -200px;
-    max-width: 700px;
-    position: flex;
-    display: block;
+    margin-left: -90px;
+    width: 500px;
   }
   .follow-me {
+    text-align: center;
     font-size: 12px;
-    margin-left: 120px;
+    margin-left: 87px;
+  }
+
+  .col-6 .portrait2 {
+    width: 250px;
+    margin-left: -100px;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 991px) {
+  .portrait {
+    margin-left: 25px;
+    text-align: center;
+    position: relative;
+  }
+  #name {
+    margin-top: 0%;
+    margin-left: 50px;
+    position: relative;
+  }
+
+  #about-paragraph {
+    margin-left: 15px;
+    width: 500px;
+  }
+  .follow-me {
+    text-align: center;
+    margin-left: 150px;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .portrait {
+    margin-left: -50px;
+    text-align: center;
+    position: relative;
+    width: 518px;
+  }
+  #name {
+    margin-top: 0%;
+    margin-left: 50px;
+    position: relative;
+  }
+
+  #about-paragraph {
+    margin-left: 15px;
+    width: 500px;
+  }
+  .follow-me {
+    text-align: center;
+    margin-left: -11px;
+  }
   .col-6 .portrait2 {
     margin-left: -80px;
   }
