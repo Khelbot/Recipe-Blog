@@ -6,6 +6,7 @@
         <meta name="description" content="Shelley White is one of New York's best homegrown chef with a wide range of experience in traditional, multicultural and experimental cuisine. She has dedicated her life to sharing and bringing communities together with her cooking. Here she shares some of her work with us. ">
 
     <title>Shelley White - Recipe Collection</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
@@ -32,34 +33,42 @@
   </head>
   <body>
 
+
 <div class="nav-container container">
-  <nav class="d-flex justify-content-between">
-    <a href="https://www.shecodes.io/">
+  <nav class=" navbar navbar-expand-md navbar-light d-flex">
+    <a class="navbar-brand" href="https://www.shecodes.io/">
     <img src="images/logo.png" alt="shecodes-logo" class=" logo d-none d-md-block" title="Go to Shecodes">
     <img src="images/logo-small.png" alt="shecodes-logo-icon" class=" logo-small d-block d-md-none" title="Go to Shecodes">
 </a>
-<ul> <li class="home-button" title="Homepage">
-  <a href="./index.html">
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+<ul class="navbar-nav"> 
+  <li class="nav-item" title="Homepage">
+  <a  class="nav-link home-button " href="./index.html">
  Home
   
 </a></li>
-<li class="about-button" title="About Shelley">
- <a href="about.html">
+<li class="nav-item" title="About Shelley">
+ <a class=" nav-link about-button" href="about.html">
   About
 </a>
-</li><li class="recipe-button active" title="Shelley's Recipes">
- <a href="recipe.html">
+</li>
+<li class="nav-item" title="Shelley's Recipes">
+ <a class="nav-link recipe-button active" href="recipe.html">
   Recipes
   
 </a></li>
- <li class="contact-button"title="Contact Shelley">
- <a href="contact.html">
+ <li class="nav-item"  title="Contact Shelley">
+ <a class="nav-link contact-button" href="contact.html">
  Contact
 </a></li>
-</ul>
-  </nav> 
-
+</ul> </div>
+  </nav>
 </div>
+
+    
    
     <div class="recipe-section container">
        <h1 class="font-weight-bold mt-4 mb-5 pb-5">Recipe Collection</h1>
@@ -69,7 +78,7 @@
             src="images/bigtuttifrutti.png"
             alt="fruity-breakfast-bowl"
             title="fruity-tutti-breakfast-bowl"
-            class="food-image-recipe-page mb-5 mt-5"
+            class="food-image-recipe-page mb-5 mt-5 img-fluid"
             id="fruity-tutti"
           />
           <h2 class="font-weight-bold recipe-title-page-3 mb-5"  title="fruity-tutti-breakfast-bowl">
@@ -86,7 +95,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
             </div>
             <div class="row">
@@ -95,7 +104,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                   3 strawberries
@@ -103,32 +112,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 passionfruit</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">4 raspberries</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">2 cherries</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 star anise</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -155,7 +164,7 @@
             src="images/bigmeatballs.png"
             alt="meatballs"
             title="Nonna's Homeade Meatballs"
-            class="food-image-recipe-page mb-5 mt-5"
+            class="food-image-recipe-page mb-5 mt-5 img-fluid"
             id="meatballs"
           />
           
@@ -173,7 +182,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -182,7 +191,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                  1 egg
@@ -190,32 +199,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1/2 cup, breadcrumbs</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1/2 cup, milk</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">2 tsp, italian seasoning</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 cup, arugala</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -240,7 +249,7 @@
             src="images/bigspringsalad.png"
             alt="spring-salad"
             title="Seasonal Spring Salad"
-            class="food-image-recipe-page mb-5 mt-5"
+            class="food-image-recipe-page mb-5 mt-5 img-fluid"
             id="spring-salad"
           />
           <h2 class="recipe-title-page-3 mb-5 font-weight-bold"  title="Seasonal Spring Salad">Seasonal Spring Salad</h2>
@@ -255,7 +264,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -264,7 +273,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                   1/4 cup, chickpeas
@@ -272,32 +281,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1/4 cup purple cabbage</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 garlic clove, crushed</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">1/2 cup sprouts</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1/2 lb, lettuce</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -320,7 +329,7 @@
             src="images/Rectangle2.png"
             alt="sir-loin-steak"
             title="Sir Loin Steak Slab"
-            class="food-image-recipe-page mb-5 mt-5"
+            class="food-image-recipe-page mb-5 mt-5 img-fluid"
             id="sir-loin-steak"
           />
           <h2 class="recipe-title-page-3 mb-5 font-weight-bold" title="Sir Loin Steak Slab" >Sir Loin Steak Slab</h2>
@@ -335,7 +344,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -344,7 +353,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                   3 cloves of garlic, diced.
@@ -352,32 +361,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">2 stp olive oil</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1/4 cup parsely, finely chopped</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">1 stick of butter</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1/4 cup of thyme</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -401,7 +410,7 @@
             src="images/Rectangle8.png"
             alt="citrus-fruit-salad"
             title="Citrus Fruit Salad"
-            class="food-image-recipe-page mb-5 mt-5"
+            class="food-image-recipe-page mb-5 mt-5 img-fluid"
             id="citrus-salad"
           />
           <h2 class="recipe-title-page-3 mb-5 font-weight-bold"  title="Citrus Fruit Salad">Citrus Fruit Salad</h2>
@@ -416,7 +425,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -425,7 +434,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                  1 large lemon, thinly sliced
@@ -433,32 +442,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">2 stp olive oil</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 garlic clove, crushed</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">1/4 cup pomegranate kernels</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 oz of pistachios</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -482,7 +491,7 @@
             src="images/Rectangle3.png"
             alt="dressed-hummus"
             title="Mediterranean Dressed Hummus"
-            class="food-image-recipe-page mb-5 mt-5"
+            class="food-image-recipe-page mb-5 mt-5 img-fluid"
             id="hummus"
           />
           <h2 class="recipe-title-page-3 mb-5 font-weight-bold" title="Mediterranean Dressed Hummus">Mediterranean Dressed Hummus</h2>
@@ -497,7 +506,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -506,7 +515,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                   1 cup of blended chickpeas
@@ -514,32 +523,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">2 stp olive oil</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 garlic clove, crushed</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">1 oz pomegrante kernels</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 oz pine nuts</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -562,7 +571,7 @@
             src="images/Rectangle5.png"
             alt="salmon-and-veggies"
             title="Roasted Salmon and Veggies"
-            class="food-image-recipe-page mb-5 mt-5"id="salmon"
+            class="food-image-recipe-page mb-5 mt-5 img-fluid"id="salmon"
           />
           <h2 class="recipe-title-page-3 mb-5 font-weight-bold" id="salmon"  title="Roasted Salmon and Veggies">Roasted Salmon and Veggies</h2>
         <div class="row">
@@ -576,7 +585,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -585,7 +594,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                  1  large cucumber
@@ -593,32 +602,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">2 stp olive oil</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 garlic clove, crushed</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">1 1/2lb of spinach</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 medium sized tomato, chopped</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -641,7 +650,7 @@
             src="images/Rectangle6.png"
             alt="pesto-salad"
             title="Pesto Pasta Salad"
-            class="food-image-recipe-page mb-5 mt-5"
+            class="food-image-recipe-page mb-5 mt-5 img-fluid"
             id="pesto"
           />
           <h2 class="recipe-title-page-3 mb-5 font-weight-bold" title="Pesto Pasta Salad">Pesto Pasta Salad</h2>
@@ -656,7 +665,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -665,7 +674,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                  1/2 cup of cherry tomatoes
@@ -673,32 +682,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">2 stp olive oil</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 garlic clove, crushed</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">1lb of lettuce</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">50g parmesan, grated</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -721,7 +730,7 @@
             src="images/Rectangle7.png"
             alt="blueberry-pancakes"
             title="Blueberry Pancakes"
-            class="food-image-recipe-page mb-5 mt-5"
+            class="food-image-recipe-page mb-5 mt-5 img-fluid"
             id="pancakes"
           />
           <h2 class="recipe-title-page-3 mb-5 font-weight-bold" title="Blueberry Pancakes">Blueberry Pancakes</h2>
@@ -736,7 +745,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -745,7 +754,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                  1 1/2 cup of pancake mix
@@ -753,32 +762,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1/2 cup of milk</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1/2 cup of water</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">2 teaspons of sugar</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 teaspoon of honey</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -801,7 +810,7 @@
             src="images/acaibowl2.png"
             alt="acai-bowl"
             title="Fruit Packed Acai Bowl"
-            class="food-image-recipe-page mb-5 mt-5"
+            class="food-image-recipe-page mb-5 mt-5 img-fluid"
           />
           <h2 class="recipe-title-page-3 mb-5 font-weight-bold" id="acai" title="Fruit Packed Acai Bowl">Fruit Packed Acai Bowl</h2>
         <div class="row">
@@ -815,7 +824,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -824,7 +833,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                   1/2 cup of frozen raspberries
@@ -832,32 +841,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0"> 1/2 cup of frozen blackberries</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0"> 1/2 cup of frozen mango</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0"> 1/2 cup of frozen bluberries</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1/4 cup of grated coconut</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -880,7 +889,7 @@
             src="images/sweetnsavory.png"
             alt="sweet-savory-snackboard"
             title="Sweet and Savory Board"
-            class="food-image-recipe-page  mb-5 mt-5"
+            class="food-image-recipe-page  mb-5 mt-5 img-fluid"
           />
           <h2 class="recipe-title-page-3 mb-5 font-weight-bold" id="sweet-savory"  title="Sweet and Savory Board">Sweet and Savory Board</h2>
         <div class="row">
@@ -894,7 +903,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -903,7 +912,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                  1 block of brie cheese
@@ -911,32 +920,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">grapes- green and red</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 garlic clove, crushed</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">pancetta</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1/2 cup of strawberries</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -960,7 +969,7 @@
             src="images/porridgebowl.png"
             alt="baked-porridge-bowl" 
             title="Baked Porridge Bowl"
-            class="food-image-recipe-page  mb-5 mt-5"
+            class="food-image-recipe-page  mb-5 mt-5 img-fluid"
           />
           <h2 class="recipe-title-page-3 mb-5 font-weight-bold" id="porridge" title="Baked Porridge Bowl">Baked Porridge Bowl</h2>
         <div class="row">
@@ -974,7 +983,7 @@
             <img
               src="images/line1.png"
               alt="dotted-line-break"
-              class="dotted-line-1 mb-5 ml-3"
+              class="dotted-line-1 mb-5 ml-3 img-fluid"
             />
              </div>
             <div class="row">
@@ -983,7 +992,7 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">
                  1/4 cup of pistachios
@@ -991,32 +1000,32 @@
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 cup of oats</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">2 tbsp of brown sugar</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
 
                 <p class="mb-0">2 tsp of dried rose flakes, crushed</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
                 <p class="mb-0">1 cup of whole milk</p>
                 <img
                   src="images/line2.png"
                   alt="dotted-line-break"
-                  class="dotted-line-2"
+                  class="dotted-line-2 img-fluid"
                 />
               </div>
               <div class="col-6 recipe-method">
@@ -1042,7 +1051,7 @@
 
 
     
-    <div class="footer-container">
+    <div class="footer-container d-none d-lg-block">
       <div class="row">
         <div class="col-4">
           <footer>
