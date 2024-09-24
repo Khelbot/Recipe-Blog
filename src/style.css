@@ -4,15 +4,24 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 
 .about-section {
-  padding-bottom: 15px;
-  margin-left: 30px;
-  margin-top: 20px;
-  padding-right: 0px;
-  margin-right: 0px;
-  max-width: 1355px;
+  display: flex; /* Ensure flexbox is enabled */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Optional: center vertically */
+  width: 100%;
+}
+.about-me-title {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container .container {
+  width: 100%;
 }
 
 nav .logo,
@@ -55,10 +64,11 @@ nav li.active a {
 
 .overlay-container {
   position: relative;
-  display: inline-block;
+  display: flex;
   width: 100%;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 
 .overlay-text {
@@ -69,7 +79,7 @@ nav li.active a {
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Center horizontally */
   text-align: center;
-  max-width: 80%;
+  width: auto;
 }
 
 .title-description {
@@ -78,8 +88,16 @@ nav li.active a {
 }
 
 .collection-container {
-  text-align: center;
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center images horizontally */
   margin: 130px 100px;
+  width: auto; /* Remove fixed width to allow flexibility */
+}
+
+.food-image-homepage {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .food-image-recipe-page {
@@ -90,7 +108,7 @@ nav li.active a {
 .recipe-title-page-1 {
   line-height: 3;
   text-align: start;
-  margin-left: 20px;
+
   font-size: 28px;
   font-weight: bold;
   color: black;
@@ -134,51 +152,58 @@ h3 {
   padding-right: 100px;
 }
 
+.portrait-column {
+  margin-top: 0;
+}
 #name {
   font-size: 64px;
   font-family: "Nunito", sans-serif;
   padding-top: 50px;
-  margin-left: -20px;
-  position: relative;
+  margin: 0 auto;
+
   font-weight: 700;
-  width: 500px;
+  text-align: center;
 }
 
 #about-paragraph {
   line-height: 2;
   font-size: 18px;
-  margin-right: 150px;
-  position: relative;
+  margin: 20px auto; /* Center and add vertical spacing */
+  text-align: center; /* Center text */
+  max-width: 500px;
 }
 
 .follow-me {
   font-size: 18px;
-  margin-right: 120px;
-  position: relative;
+  margin: 20px auto;
   text-align: center;
 }
 .follow-section {
-  margin-left: -300px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items */
+  margin: 0 auto;
 }
 .follow-me-thumbnail {
   text-align: center;
-  padding: 0px;
+  padding: 0;
   width: 14px;
-  margin: 10px;
-  margin-top: 5px;
-  margin-right: -40px;
-  margin-left: -20px;
+  margin: 10px; /* Ensure spacing is uniform */
 }
-.favorites-container {
-  padding-bottom: 40px;
-  margin-left: 80px;
-}
-
 .favorite-recipe {
   font-size: 36px;
   text-align: center;
   margin-top: 120px;
   font-weight: bold;
+}
+.favorites-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow images to wrap onto new lines */
+  justify-content: center; /* Center images horizontally */
+  padding-bottom: 40px;
+  margin-left: auto; /* Center container */
+  margin-right: auto; /* Center container */
+  max-width: 1200px; /* Optional: set a max width */
+  width: 100%; /* Ensure full width */
 }
 
 .favorites-title {
@@ -209,6 +234,7 @@ h3 {
   max-width: 500px;
   margin-bottom: 100px;
 }
+
 .address,
 .email,
 .phone {
@@ -237,10 +263,13 @@ h3 {
 
 .footer-container {
   background-color: #f4effb;
-  display: block;
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 100px;
   text-align: center;
+  width: 100%;
 }
 
 .tag-2 {
@@ -248,9 +277,10 @@ h3 {
   font-family: "Nunito", sans-serif;
   font-size: 26px;
   font-weight: bold;
+  padding-left: 0px;
   padding-top: 35px;
-  text-align: start;
-  margin-left: 80px;
+  width: 300px;
+  margin: 0; /* Remove margin */
 }
 
 .footer-thumbnail {
@@ -313,6 +343,11 @@ h3 {
   }
   .follow-section {
     margin-left: -725px;
+  }
+  .favorites-container img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Optional: spacing between images */
   }
   .favorites-image {
     padding-left: 40px;
