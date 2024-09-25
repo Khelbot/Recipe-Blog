@@ -5,19 +5,9 @@
 body {
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
-}
-
-.about-section {
-  display: flex; /* Ensure flexbox is enabled */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center children horizontally */
-  justify-content: center; /* Optional: center vertically */
-  width: 100%;
-}
-.about-me-title {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  max-width: 100vw;
+  height: 100%; /* Ensure full height */
+  margin: 0;
 }
 
 .nav-container .container {
@@ -59,7 +49,7 @@ nav li.active a {
   text-decoration: none;
 }
 .navbar-toggler {
-  margin-right: 40px;
+  margin-right: 15px;
 }
 
 .overlay-container {
@@ -147,9 +137,20 @@ h3 {
 }
 
 .about-section {
+  display: flex; /* Ensure flexbox is enabled */
+  flex-wrap: wrap;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Optional: center vertically */
+  width: 100%;
   margin-top: 80px;
   margin-left: 220px;
   padding-right: 100px;
+}
+.about-me-title {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .portrait-column {
@@ -160,7 +161,6 @@ h3 {
   font-family: "Nunito", sans-serif;
   padding-top: 50px;
   margin: 0 auto;
-
   font-weight: 700;
   text-align: center;
 }
@@ -200,9 +200,7 @@ h3 {
   flex-wrap: wrap; /* Allow images to wrap onto new lines */
   justify-content: center; /* Center images horizontally */
   padding-bottom: 40px;
-  margin-left: auto; /* Center container */
-  margin-right: auto; /* Center container */
-  max-width: 1200px; /* Optional: set a max width */
+  margin: 0 auto; /* Center container */
   width: 100%; /* Ensure full width */
 }
 
@@ -219,6 +217,14 @@ h3 {
   color: black;
 }
 
+.favorites-image {
+  max-width: 300px; /* Ensure images fit */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  margin: 10px; /* Adjust spacing around each image */
+}
+
 .favorites-description {
   font-size: 16px;
   line-height: 2;
@@ -229,6 +235,17 @@ h3 {
 .recipe-section {
   text-align: center;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the wrapper takes full viewport height */
+}
+
+.main-content {
+  flex: 1; /* Allow the main content to grow and take available space */
+}
+
 .col-6 .portrait2 {
   position: relative;
   max-width: 500px;
@@ -265,7 +282,7 @@ h3 {
   background-color: #f4effb;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100px;
   text-align: center;
@@ -279,7 +296,6 @@ h3 {
   font-weight: bold;
   padding-left: 0px;
   padding-top: 35px;
-  width: 300px;
   margin: 0; /* Remove margin */
 }
 
@@ -291,8 +307,12 @@ h3 {
 
 .footer-copyright {
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  padding-top: 45px;
+  font-size: 14px;
+  padding-top: 35px;
+  margin-left: 20px;
+  margin-right: 0;
+  width: 200px;
+  padding-right: 0px;
 }
 
 #scroll-to-top {
@@ -309,71 +329,252 @@ h3 {
   bottom: 130px;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 300px) and (max-width: 600px) {
+  /* Homepage */
+  .overlay {
+    height: 150px;
+    width: 100vw;
+  }
+
   h1 {
     font-size: 47px;
   }
-
-  .overlay {
-    height: 150px;
-  }
   .food-image-homepage {
-    max-width: 350px;
+    max-width: 320px;
   }
+
   .recipe-title-page-1 {
     font-size: 24px;
     text-align: center;
-    margin-left: 0;
+    margin: auto;
+    line-height: 2;
+    margin-top: 10px;
   }
 
-  .portrait-column {
-    left: -55px;
+  .collection-container {
+    margin-bottom: 65px;
+    margin-top: 100px;
+  }
+
+  /* About */
+  .about-me-complete-section {
+    padding: 0 20px;
+  }
+  .about-section {
+    margin-left: auto;
+    padding: 0;
   }
 
   #name {
-    margin-top: 200px;
+    font-size: 40px;
+  }
+
+  .portrait {
+    max-width: 200px;
+    align-items: center;
+  }
+
+  .favorite-recipe {
+    margin-top: 50px;
+  }
+
+  .favorites-image {
+    max-width: 90%; /* Allow images to be more flexible on smaller screens */
+    margin: 10px auto; /* Center and space out images */
+  }
+
+  /* Recipe */
+  .recipe-section {
+    padding: 0 25px;
+  }
+
+  /* Contact */
+
+  .contact-information {
+    text-align: center;
+    padding: 0 25px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  /* Homepage */
+  .overlay {
+    height: 160px;
+    width: 100vw;
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .recipe-title-page-1 {
+    font-size: 26px;
+    text-align: center;
+    margin: auto;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  .collection-container {
+    margin-bottom: 65px;
+    margin-top: 110px;
+  }
+  /* About */
+  .about-section {
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .portrait {
+    max-width: 280px;
+  }
+  #name {
+    padding: 0;
+    font-size: 47px;
+  }
+  #about-paragraph {
+    margin: 0px; /* Center and add vertical spacing */
+  }
+  .favorites-container {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center; /* Center the images */
+    margin: 0 auto;
+  }
+  .favorite-recipe {
+    margin-top: 50px;
+  }
+
+  .favorites-image {
+    flex: 0 1 30%; /* Allow the images to take up equal space */
+    margin: 10px; /* Center and space out images */
+  }
+
+  .favorites-description {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+  /* Recipe */
+  .recipe-section {
+    padding: 0 60px;
+  }
+  /* Contact */
+  .portrait2 {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  /* Homepage */
+  .overlay {
+    height: 200px;
+    width: 100vw;
+    margin-bottom: 0px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .title-description {
+    font-size: 20px;
+  }
+  /* About */
+  .about-section {
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .portrait {
+    max-width: 320px;
+  }
+  #name {
+    padding: 0;
+    font-size: 50px;
+    width: 340px;
+  }
+  #about-paragraph {
+    margin: 0px; /* Center and add vertical spacing */
+  }
+
+  .favorites-container {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center; /* Center the images */
+    margin: 0 auto;
+  }
+  .favorite-recipe {
+    margin-top: 50px;
+  }
+
+  .favorites-image {
+    flex: 0 1 30%; /* Allow the images to take up equal space */
+    margin: 10px; /* Center and space out images */
+  }
+
+  .favorites-description {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+  /* Recipe */
+  /* Contact */
+
+  .contact-container {
+    padding-bottom: 200px;
+  }
+  .portrait2 {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  /* Homepage */
+  .overlay {
+    height: 265px;
+    width: 100vw;
+    margin-bottom: 0px;
+  }
+  h1 {
+    font-size: 72px;
+  }
+  /* About */
+  .about-section {
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .portrait {
+    max-width: 360px;
+  }
+  #name {
+    padding: 0;
+    font-size: 64px;
+    width: 430px;
     text-align: start;
   }
   #about-paragraph {
-    width: 400px;
+    margin: 0px; /* Center and add vertical spacing */
   }
-  #name,
-  #about-paragraph {
-    margin-left: -400px;
+  .favorites-container {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center; /* Center the images */
+    margin: 0 auto;
   }
-  .follow-section {
-    margin-left: -725px;
+  .favorite-recipe {
+    margin-top: 50px;
   }
-  .favorites-container img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px; /* Optional: spacing between images */
-  }
+
   .favorites-image {
-    padding-left: 40px;
-    margin-bottom: 25px;
+    flex: 0 1 30%; /* Allow the images to take up equal space */
+    margin: 10px; /* Center and space out images */
   }
 
-  .favorites-title {
-    text-align: center;
-    margin-left: -120px;
+  .favorites-description {
+    margin-bottom: 60px;
+    margin-right: 0;
   }
-  .recipe-section .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .food-image-recipe-page {
-    width: 400px;
-    margin: 70px;
-  }
-  .recipe-title-page-3,
-  .ingredient-title,
-  .method-title {
-    text-align: center;
-  }
-
-  .contact-row {
-    margin-left: 70px;
-    width: 800px;
+  /* Recipe */
+  /* Contact */
+  .contact-container {
+    padding-bottom: 200px;
   }
 }
